@@ -1,0 +1,28 @@
+
+<table class="table" align="center">
+  <thead>
+    <tr>
+      <th>Ime</th>
+      <th>Broj kreveta</th>
+      <th>TV</th>
+    </tr>
+  </thead>
+  <tbody>
+
+		<tr  *ngIf="data">
+
+			<td>{{data.roomname}}</td>
+			<td>{{data.beds}}</td>
+			<td>
+				<span *ngIf="data.tv == '1'">
+				TV: Ima
+				 </span>
+			<span *ngIf="data.tv != '1'">
+					TV: Nema
+			</span>
+		</td>
+
+		</tr>
+  </tbody>
+
+</table>
